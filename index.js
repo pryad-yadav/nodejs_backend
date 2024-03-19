@@ -9,6 +9,9 @@ app.get("/", (req, res) => {
 app.get("/login", (req, res) => {
   res.send("<h1>Welcome</h1>");
 });
+app.get("/logout", (req, res) => {
+  res.send("<h1>Logout</h1>");
+});
 app.listen(port, () => {
   console.log("Linstening on port " + port);
 });
